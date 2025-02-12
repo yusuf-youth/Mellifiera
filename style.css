@@ -608,11 +608,11 @@
     }
 
     .header-logo-img {
-        width: 180px;
+        width: 150px;
     }
 
     .header-actions {
-        column-gap: 15px;
+        column-gap: 10px;
     }
 
     .hero {
@@ -694,11 +694,5 @@
 
     .footer-socials {
         margin-bottom: 30px;
-    }
-}
-
-@media (max-width: 500px) {
-    .header-button {
-        display: none;
     }
 }
