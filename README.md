@@ -3,7 +3,7 @@
 
 <i>Hi there! This is a website I built from Figma template for demonstration to potential employers.</i> 
 
-<a href="https://yusuf-youth.github.io/Mellifiera/">Website</a>, <a href="https://www.figma.com/design/looVovKFshD9bHsOjbcpSb/Mellifiera?node-id=0-1&p=f&t=7hFoRHYjNEUTNzPU-0">Template</a>. <br />
+The website is about honey bees, beekeeping, and raising awareness of their importance. It offers bee-related products, educational resources, and event updates. <a href="https://yusuf-youth.github.io/Mellifiera/">Website</a>, <a href="https://www.figma.com/design/looVovKFshD9bHsOjbcpSb/Mellifiera?node-id=0-1&p=f&t=7hFoRHYjNEUTNzPU-0">Template</a>. <br />
 
 <h2>Structure</h2>
 The project is structured with following folders: 
