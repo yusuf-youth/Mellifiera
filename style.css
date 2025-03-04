@@ -1,0 +1,698 @@
+@import url(styles/reset.css);
+@import url(styles/fonts.css);
+@import url(styles/variables.css);
+@import url(styles/globals.css);
+
+:root {
+    --color-light: #ffffff;
+    --color-light-alt: #F7F3F0;
+    --color-light-gray: #5B5858;
+
+    --color-dark: #131313;
+    --color-dark-gray: #383838;
+    --color-dark-gray-alt: #3C3C3C;
+
+    --color-accent: #C74817;
+
+    --color-light-brown: #D3A863;
+    --color-pink: #EE2852;
+
+
+    --font-family-base: 'Open Sans', sans-serif;
+
+    --border: 1px solid #545050;
+    --border-radius: 50%;
+
+    --container-width: 1300px;
+    --container-padding-x: 10px;
+
+    --transition-duration: 0.3s;
+
+    --header-height: 100px;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: var(--color-light);
+}
+
+.header-body {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    height: var(--header-height);
+}
+
+.header-logo-link {
+    flex-shrink: 0;
+}
+
+.header-logo-img {
+    height: auto;
+}
+
+.header-menu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: end;
+}
+
+.header-menu-list {
+    display: flex;
+    column-gap: 45px;
+}
+
+.header-menu-link {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 2.25px;
+}
+
+.header-menu-link.is-current {
+    color: var(--color-accent);
+}
+
+.header-menu-link:hover {
+    color: var(--color-accent);
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    padding-left: 20px;
+}
+
+.header-button:hover {
+    background-color: var(--color-accent);
+}
+
+.header-cart-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.header-cart-button:hover svg {
+    color: var(--color-dark-gray);
+}
+
+.header-cart-button svg {
+    color: var(--color-light-gray);
+}
+
+.header-cart-button-counter {
+    position: absolute;
+    top: 3px;
+    right: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14px;
+    height: 14px;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--color-light);
+    background-color: var(--color-accent);
+    border-radius: var(--border-radius);
+}
+
+.hero {
+    position: relative;
+    background-color: var(--color-light-alt);
+}
+
+.hero-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.hero-subtitle {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 5px;
+}
+
+.hero-title {
+    margin-bottom: 6px;
+    font-size: clamp(60px, 7.08vw, 136px);
+    line-height: clamp(70px, 9vw, 113px);
+}
+
+.hero-description {
+    max-width: 500px;
+    margin-bottom: 40px;
+}
+
+.hero-honey-image {
+    width: clamp(21.875rem, 15.6553rem + 23.5372vw, 47.5rem);
+    height: auto;
+}
+
+.hero-chat-button {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+    height: 50px;
+    padding-inline: 22px;
+    letter-spacing: 0.6px;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--color-light);
+    background-color: var(--color-pink);
+    border-radius: 30px;
+}
+
+.hero-chat-button:hover {
+    background-color: var(--color-accent);
+}
+
+.mission {
+    background-color: var(--color-light-alt);
+}
+
+.mission-inner {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+.mission-body {
+    max-width: 800px;
+}
+
+.mission-image-wrapper {
+    position: relative;
+    max-width: 800px;
+    margin-bottom: 28px;
+}
+
+.mission-image {
+    width: 100%;
+}
+
+.mission-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    aspect-ratio: 1;
+    background-color: var(--color-light);
+    border-radius: var(--border-radius);
+}
+
+.mission-button svg {
+    color: var(--color-accent);
+}
+
+.mission-title {
+    margin-bottom: 6px;
+}
+
+.mission-description:first-of-type {
+    margin-bottom: 36px;
+}
+
+.mission-description:last-of-type {
+    margin-bottom: 33px;
+}
+
+.mission-sidebar {
+    max-width: 420px;
+    padding: 38px 40px;
+    background-color: var(--color-light);
+}
+
+.mission-sidebar .mission-title {
+    margin-bottom: 18px;
+}
+
+.mission-news-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 44px;
+    margin-bottom: 44px;
+}
+
+.mission-news-card-title {
+    font-size: clamp(18px, 1.14vw, 22px);
+    line-height: 30px;
+    margin-bottom: 14px;
+}
+
+.mission-link {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.products {
+    padding-top: 120px;
+    padding-bottom: 30px;
+    background-color: var(--color-light-alt);
+}
+
+.products-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 17px;
+    margin-bottom: 20px;
+}
+
+.products-description {
+    max-width: 600px;
+    text-align: center;
+}
+
+.products-body {
+    padding: 40px;
+}
+
+.products-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.products-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 380px;
+}
+
+.products-card-image {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.products-card-price {
+    margin-bottom: 14px;
+    color: var(--color-accent);
+}
+
+.products-card-description {
+    margin-bottom: 25px;
+}
+
+.products-card-button {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.products-card-button:hover {
+    color: var(--color-accent);
+}
+
+.products-card-button:hover svg {
+    color: var(--color-accent);
+}
+
+.testimony {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+    padding: 40px;
+}
+
+.testimony-image-wrapper {
+    position: relative;
+    max-width: 312px;
+}
+
+.testimony-image {
+    width: 100%;
+}
+
+.testimony-badge {
+    position: absolute;
+    top: clamp(-0.9375rem, -0.7212rem + 0.9615vw, -1.875rem);;
+    right: clamp(-0.625rem, -0.4808rem + 0.641vw, -1.25rem);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(2.5rem, 2.0529rem + 1.9872vw, 4.4375rem);
+    aspect-ratio: 1;
+    background-color: var(--color-light-brown);
+    border-radius: var(--border-radius);
+}
+
+.testimony-badge svg {
+    width: clamp(1.375rem, 1.0577rem + 1.4103vw, 2.75rem);
+    color: var(--color-light);
+}
+
+.testimony-quote {
+    max-width: 850px;
+    margin-bottom: 38px;
+    font-style: italic;
+    line-height: 38px;
+    color: var(--color-light-gray);
+}
+
+.testimony-person {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+.testimony-person-name {
+    font-size: clamp(18px, 1.14vw, 22px);
+}
+
+.gallery {
+    padding-block: 40px;
+}
+
+.gallery-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 17px;
+    text-align: center;
+}
+
+.gallery-description {
+    max-width: 676px;
+    margin-bottom: 63px;
+}
+
+.gallery-collection-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.subscription {
+    background-color: var(--color-light);
+}
+
+.subscription-inner {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+
+.subscription-image {
+    width: 100%;
+}
+
+.subscription-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 650px;
+}
+
+.subscription-title {
+    margin-bottom: 17px;
+}
+
+.subscription-description {
+    margin-bottom: 55px;
+}
+
+.subscription-form {
+    display: flex;
+    column-gap: 15px;
+}
+
+.types-header {
+    margin-bottom: 53px;
+    text-align: center;
+}
+
+.types-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.types-card {
+    display: flex;
+    align-items: center;
+    column-gap: 44px;
+    padding: 29px 55px;
+    background-color: var(--color-light);
+}
+
+.types-card-title {
+    margin-bottom: 8px;
+}
+
+.types-card-description {
+    margin-bottom: 16px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 35px;
+}
+
+.footer-socials {
+    margin-bottom: 38px;
+}
+
+.footer-socials-list {
+    display: flex;
+    column-gap: 10px;
+}
+
+.footer-socials-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    aspect-ratio: 1;
+    background-color: var(--color-accent);
+    border-radius: var(--border-radius);
+}
+
+.footer-socials-link svg {
+    width: 18px;
+    aspect-ratio: 1;
+    color: var(--color-light);
+}
+
+.footer-image {
+    margin-bottom: 8px;
+}
+
+.footer-copyright {
+    font-size: 12px;
+    line-height: 30px;
+}
+
+@media (max-width: 1280px) {
+    .header-body {
+        justify-content: space-between;
+        padding-block: 20px;
+    }
+
+    .header-menu-list {
+        column-gap: 25px;
+    }
+
+    .header-menu-link {
+        font-size: 14px;
+    }
+
+    .header-actions {
+        padding-left: 10px;
+    }
+
+    .hero-inner {
+        column-gap: 17px;
+    }
+
+    .subscription-image {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .header-menu {
+        display: none;
+    }
+
+    .hero-subtitle {
+        letter-spacing: 2px;
+    }
+
+    .mission-button {
+        width: 60px;
+    }
+
+    .mission-button svg {
+        width: 12px;
+        height: 22px;
+    }
+
+    .products {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    .gallery-header {
+        row-gap: 10px;
+    }
+
+    .gallery-description {
+        margin-bottom: 40px;
+    }
+
+    .subscription-inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscription-image {
+        max-width: 600px;
+    }
+
+    .subscription-description {
+        margin-bottom: 30px;
+    }
+
+    .types-header {
+        margin-bottom: 30px;
+    }
+
+    .types-list {
+        gap: 15px;
+    }
+
+    .types-card {
+        column-gap: 25px;
+        padding: 20px 30px;
+    }
+
+    .types-card-image {
+        max-width: 120px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header-body {
+        column-gap: 8px;
+        height: 60px;
+    }
+
+    .header-logo-img {
+        width: 150px;
+    }
+
+    .header-actions {
+        column-gap: 10px;
+    }
+
+    .hero {
+        padding-block: 10px;
+    }
+
+    .hero-inner {
+        flex-direction: column-reverse;
+    }
+
+    .hero-description {
+        margin-bottom: 20px;
+    }
+
+    .mission {
+        padding-block: 20px;
+    }
+
+    .mission-description {
+        margin-bottom: 20px !important;
+    }
+
+    .mission-sidebar {
+        display: none;
+    }
+
+    .products-header {
+        margin-bottom: 10px;
+    }
+
+    .products-body {
+        padding-block: 10px;
+    }
+
+    .products-list {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .testimony {
+        flex-direction: column;
+        align-items: start;
+        padding-inline: 20px;
+    }
+
+    .testimony-quote {
+        margin-bottom: 25px;
+    }
+
+    .gallery-collection-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .subscription {
+        padding-block: 15px;
+    }
+    
+    .subscription-title {
+        margin-bottom: 10px;
+    }
+
+    .subscription-description {
+        margin-bottom: 20px;
+    }
+
+    .types-list {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .types-card {
+        max-width: 600px;
+    }
+
+    .footer {
+        padding-block: 15px;
+    }
+
+    .footer-socials {
+        margin-bottom: 30px;
+    }
+}
