@@ -28,6 +28,10 @@ The project has several features:
   <li>
     <b>Semantics. </b>The project adheres to semantics, so it uses <code>&lt;nav&gt;</code> for navigation, <code>&lt;articles&gt;</code> for cards, <code>&lt;time&gt;</code> for dates and so on.
   </li>
+
+  <li>
+<b>CSS variables. </b>The project uses css variables throughout styles ensuring maintainability, reusability, and consistency of the code.
+</li>
   
   <li>
     <b>Components. </b>The project has independent components such as <code>.button</code>, <code>.input</code>, and others for use in different places on the website. 
