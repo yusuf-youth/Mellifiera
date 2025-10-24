@@ -1,7 +1,4 @@
-<img src="https://www.ruraltreasures.com/cdn/shop/articles/Banner_870_x_581.jpg?v=1649945817" width="500" />
-<br />
-
-<i>Hi there! This is a website I built from Figma template for demonstration to potential employers.</i> 
+<img src="images/app.png" width="600" />
 
 The website is about honey bees, beekeeping, and raising awareness of their importance. It offers bee-related products, educational resources, and event updates. <a href="https://yusuf-youth.github.io/Mellifiera/">Website</a>, <a href="https://www.figma.com/design/looVovKFshD9bHsOjbcpSb/Mellifiera?node-id=0-1&p=f&t=7hFoRHYjNEUTNzPU-0">Template</a>. <br />
 
