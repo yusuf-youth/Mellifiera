@@ -45,5 +45,4 @@ The project has several features:
   </li>
 </ul>
 
-<br />
 To wrap it up, the project is built on simple HTML and CSS, and yet it is maintainable, accessible to screen readers, and is written semantically for better SEO.
